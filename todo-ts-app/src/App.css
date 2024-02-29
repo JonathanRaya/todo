@@ -1,5 +1,19 @@
-.title {
+
+/* Header */
+.links-list {
+    border: solid greenyellow;
+    list-style: none;
     display: flex;
-    justify-content: center;
-    border:solid red;
+}
+.links-list li a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+.menu ul {
+    display: none;
+    /* ... (existing styles) */
+}
+
+.menu.open ul {
+    display: flex;
 }

@@ -1,19 +1,23 @@
 import './App.css';
-import {Title} from './components/Title'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Chest from './pages/Chest';
+import Legs from './pages/Legs'
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 const App = () => {
   return (
     <>
-      <Title />
-
-    <div className="App">
-
-        
-        <p>
-        First Typescript application
-        
-        </p>
-    </div>
+    <Header />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/chest" element={<Chest />} />
+      <Route path="/legs" element={<Legs />} />
+    </Routes>
+    <Footer />
     </>
   );
 }
