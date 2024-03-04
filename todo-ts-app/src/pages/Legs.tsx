@@ -2,7 +2,7 @@ const Legs = () => {
     return(
         <>
         <div className="chest-main">
-            <h1>Legs Page</h1>
+            <h4>Legs</h4>
         </div>
         </>
     )

@@ -1,19 +1,28 @@
 
 /* Header */
+.hamburger {
+    display: flex;
+    justify-content: end;
+}
 .links-list {
-    border: solid greenyellow;
+    background-color: red;
+    width: 25vw;
     list-style: none;
     display: flex;
+    flex-direction: column;
+    
 }
 .links-list li a {
+    color: white;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
-    padding-left: 10px;
 }
 .menu ul {
-    display: none;
-    /* ... (existing styles) */
+    display: none; 
 }
 
 .menu.open ul {
     display: flex;
-}
+    justify-content: space-between;
+} 

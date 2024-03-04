@@ -18,8 +18,11 @@ const Header: React.FC = () => {
                 </div>
                 <ul className='links-list'>
                     <li><Link to="/">Home</Link></li>
-                    <li><Link to="/chest">Chest</Link></li>
                     <li><Link to="/legs">Legs</Link></li>
+                    <li><Link to="/back">Back</Link></li>
+                    <li><Link to="/arms">Arms</Link></li>
+                    <li><Link to="/chest">Chest</Link></li>
+                    <li><Link to="/shoulders">Shoulders</Link></li>
                 </ul>
                 </nav>
             </div>
