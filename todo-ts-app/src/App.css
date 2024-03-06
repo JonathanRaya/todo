@@ -2,27 +2,29 @@
 /* Header */
 .hamburger {
     display: flex;
-    justify-content: end;
+    justify-content: baseline;
 }
 .links-list {
     background-color: red;
+    border-radius: 10%;
     width: 25vw;
+    height: auto;
     list-style: none;
     display: flex;
     flex-direction: column;
-    
 }
 .links-list li a {
     color: white;
-    display: flex;
-    justify-content: center;
     text-decoration: none;
 }
 .menu ul {
     display: none; 
 }
-
 .menu.open ul {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+}
+.header-list{
+    margin-top: 6px;
+    margin-bottom: 6px;
 } 

@@ -9,21 +9,22 @@ const Header: React.FC = () => {
         setMenuOpen(!menuOpen)
     }
 
-    return(
-        <>
-            <div className="header-main">
+return (
+    <>
+        <div className="header-main">
             <nav className={`menu ${menuOpen ? 'open' : ''}`}>
                 <div className='hamburger' onClick={toggleMenu}>
-                &#9776; {/* Hamburger icon */}
+                    &#9776; {/* Hamburger icon */}
                 </div>
-                <ul className='links-list'>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/legs">Legs</Link></li>
-                    <li><Link to="/back">Back</Link></li>
-                    <li><Link to="/arms">Arms</Link></li>
-                    <li><Link to="/chest">Chest</Link></li>
-                    <li><Link to="/shoulders">Shoulders</Link></li>
+                <ul className={`links-list ${menuOpen ? 'open' : ''}`}>
+                    <li className='header-list'><Link to="/">Home</Link></li>
+                    <li className='header-list'><Link to="/legs">Legs</Link></li>
+                    <li className='header-list'><Link to="/back">Back</Link></li>
+                    <li className='header-list'><Link to="/arms">Arms</Link></li>
+                    <li className='header-list'><Link to="/chest">Chest</Link></li>
+                    <li className='header-list'><Link to="/shoulders">Shoulders</Link></li>
                 </ul>
+
                 </nav>
             </div>
         </>
